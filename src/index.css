@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "JetBrains Mono", monospace;
+}
+
+h2 {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 800;
+}
+
+h3,
+h4,
+h5 {
+  font-family: "Tiny5", sans-serif;
+}
+
+.font_tiny {
+  font-family: "Tiny5", sans-serif;
+}
+
+span {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 800;
+}
