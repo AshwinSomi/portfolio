@@ -25,3 +25,7 @@ span {
   font-family: "JetBrains Mono", monospace;
   font-weight: 800;
 }
+
+.picBlock {
+  inset: 0 9%;
+}
