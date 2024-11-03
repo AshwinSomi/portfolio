@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import pic from "../assets/pic2.png";
+import pic2 from "../assets/IMG_4226.png";
 import Projects from "./Projects";
 import { FaGithub } from "react-icons/fa";
 import { LiaGithubSquare } from "react-icons/lia";
@@ -14,7 +15,7 @@ export default function Body() {
       <div>
         <h2 className="text-3xl pb-10 sm:text-4xl ">Ashwin</h2>
       </div>
-      <div className="flex flex-wrap py-10 ">
+      <div className="flex flex-wrap pt-10 pb-6 ">
         <div className="grid grid-col text-xs md:text-sm lg:text-base pb-6 ">
           <p>
             I am a <span>web developer</span>, doing bit of everything.
@@ -29,9 +30,9 @@ export default function Body() {
         </div>
         <div className="relative group ">
           <img
-            src={pic}
+            src={pic2}
             alt="Picture"
-            className="h-36 md:h-44 lg:h-52 w-auto mx-auto px-6 py-auto transition-all duration-300 ease-in-out opacity-90 hover:opacity-100 hover:scale-105 "
+            className="h-36 md:h-44 lg:h-52 w-auto mx-auto px-6 py-auto transition-all duration-300 ease-in-out opacity-95 hover:opacity-100 hover:scale-105 "
           ></img>
           {/* <div
             className="absolute picBlock bg-gray-300 

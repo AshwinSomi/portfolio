@@ -37,6 +37,29 @@ export default function Projects() {
               <p className="py-3 ">
                 Tech stack: Next.js, Tailwind CSS, JavaScript, Firebase
               </p>
+              <details className="py-3 cursor-pointer ">
+                <summary>Instructions for use</summary>
+                <dl>
+                  <dd>
+                    -first time users can sign up. make sure the email has
+                    @domain; doesn't has to be actual mail. and password len
+                    over 6
+                  </dd>
+                  <dd>-you can log in using the same</dd>
+                  <dd>
+                    -you can write notes or anything which can be viewed by
+                    clicking on the day in calender.
+                  </dd>
+                  <dd>-at this time you cannot edit what you have entered</dd>
+                  <dd>
+                    -notes will be added to you previous notes and gets saved.
+                  </dd>
+                  <dd>
+                    -some dates in calender may be misleading; starting of the
+                    month
+                  </dd>
+                </dl>
+              </details>
               <a
                 href="https://ashwin065-track-daily.netlify.app/"
                 className="underline py-3 font_tiny"
