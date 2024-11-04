@@ -13,8 +13,10 @@ function App() {
     );
   };
   //color bg-zinc-950; neutral-950
+  //bg-[#141417]
+  //bg-[#0e0d0d]
   return (
-    <div className="min-h-screen bg-[#141417] py-12 ">
+    <div className="min-h-screen bg-[#121111] py-10 ">
       {/* flex flex-col max-w-[1000px] mx-auto w-full  */}
       <div className="flex flex-col max-w-[800px] mx-auto w-full ">
         <Body />

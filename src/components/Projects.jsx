@@ -7,7 +7,7 @@ export default function Projects() {
       <table className=" p-4 ">
         <tbody>
           <tr>
-            <td className={"border border-2 p-2 py-4 "}>
+            <td className={"border border-2 p-2 "}>
               <a
                 href="https://ashwin065-track-daily.netlify.app/"
                 target="blank"
@@ -77,7 +77,7 @@ export default function Projects() {
             </td>
           </tr>
           <tr>
-            <td className="border border-2 p-2 py-4 ">Quiz App</td>
+            <td className="border border-2 p-2 ">Quiz App</td>
             <td className="border border-2 p-4 py-4 ">
               <p className="py-3">
                 - Lets you take a quiz of set of 10 questions.
@@ -93,7 +93,7 @@ export default function Projects() {
             </td>
           </tr>
           <tr>
-            <td className={"border border-2 p-2 py-4 "}>News Analyzer</td>
+            <td className={"border border-2 p-2  "}>News Analyzer</td>
             <td className="border border-2 p-4 py-4 ">
               <p className="py-3">
                 - lets you analyze positivity and negativity of published new of
@@ -116,7 +116,7 @@ export default function Projects() {
             </td>
           </tr>
           <tr>
-            <td className={"border border-2 p-2 py-4 "}>Path Visualizer</td>
+            <td className={"border border-2 p-2 "}>Path Visualizer</td>
             <td className="border border-2 p-4 py-4 ">
               <p className="py-3">
                 - A path visualizer game that uses A* path finding algorithm to
