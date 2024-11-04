@@ -20,7 +20,9 @@ export default function Body() {
       <div className="flex flex-wrap pt-10 pb-6 ">
         <div className="grid grid-col text-xs md:text-sm lg:text-base pb-6 ">
           <p>
-            I am a <span>web developer</span>, doing bit of everything.
+            I am a <span className="text-transparent bg-white">web</span>{" "}
+            <span className="text-transparent bg-white"> developer</span>, doing
+            bit of everything.
           </p>
           <p>Interested in learning and developing new things.</p>
           <p>
