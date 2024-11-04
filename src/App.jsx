@@ -4,11 +4,8 @@ import Header from "./components/Header";
 function App() {
   const Footer = () => {
     return (
-      <footer className="text-center text-gray-500 text-xs md:text-sm p-8">
-        <p>
-          Took inspiration from online. Entirely Created by Ashwin using
-          React.js.
-        </p>
+      <footer className="text-center text-gray-500 text-xs p-8">
+        <p>Took inspiration from online. Created by Ashwin using React.js.</p>
       </footer>
     );
   };

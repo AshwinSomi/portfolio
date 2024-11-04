@@ -17,8 +17,9 @@ export default function Body() {
       <div>
         <h2 className="text-2xl pb-10 sm:text-3xl ">ASHWIN</h2>
       </div>
-      <div className="flex flex-wrap pt-10 pb-6 ">
-        <div className="grid grid-col text-xs md:text-sm lg:text-base pb-6 ">
+      <div className="flex  justify-between align-center pt-10 pb-6 ">
+        {/* lg:text-base */}
+        <div className="grid grid-col text-xs md:text-sm  pb-6 ">
           <p>
             I am a <span className="text-transparent bg-white">web</span>{" "}
             <span className="text-transparent bg-white"> developer</span>, doing
@@ -36,7 +37,8 @@ export default function Body() {
           <img
             src={pic2}
             alt="Picture"
-            className="h-36 md:h-44 lg:h-52 w-auto mx-auto px-6 py-auto transition-all duration-300 ease-in-out opacity-95 hover:opacity-100 hover:scale-105 "
+            // h-36 md:h-44 lg:h-52
+            className=" h-auto min-h-16 max-h-48 w-auto mx-auto px-6 transition duration-300 ease-in-out opacity-95 hover:opacity-100 hover:scale-105 "
           ></img>
           {/* <div
             className="absolute picBlock bg-gray-300 
@@ -46,7 +48,8 @@ export default function Body() {
           ></div> */}
         </div>
       </div>
-      <div className="text-xs md:text-sm lg:text-base  ">
+      {/* lg:text-base */}
+      <div className="text-xs md:text-sm   ">
         <p className="py-6 ">
           <span>CONTENT</span>
         </p>
@@ -77,13 +80,15 @@ export default function Body() {
           </p>
         </div>
       </div>
-      <div id="projects" className="text-xs md:text-sm lg:text-base  ">
+      {/* lg:text-base */}
+      <div id="projects" className="text-xs md:text-sm  ">
         <p className="py-6 ">
           <span>PROJECTS</span>
         </p>
         <Projects />
       </div>
-      <div id="futureGoals" className="text-xs md:text-sm lg:text-base  ">
+      {/* lg:text-base  */}
+      <div id="futureGoals" className="text-xs md:text-sm  ">
         <p className="py-6 ">
           <span>FUTURE GOALS</span>
         </p>
@@ -96,7 +101,8 @@ export default function Body() {
           </p>
         </div>
       </div>
-      <div id="resume" className="text-xs md:text-sm lg:text-base  ">
+      {/* lg:text-base  */}
+      <div id="resume" className="text-xs md:text-sm  ">
         <details className="py-6 flex items-center cursor-pointer ">
           <summary>
             <span>RESUME</span>
@@ -110,8 +116,8 @@ export default function Body() {
           )}
         </details>
       </div>
-
-      <div id="playGame" className="text-xs md:text-sm lg:text-base  ">
+      {/* lg:text-base  */}
+      <div id="playGame" className="text-xs md:text-sm  ">
         <details className="py-6 flex items-center cursor-pointer ">
           <summary>
             <span>PLAY A GAME</span>
@@ -120,7 +126,7 @@ export default function Body() {
         </details>
       </div>
 
-      <div id="media" className="text-xs md:text-sm lg:text-base  ">
+      <div id="media" className="text-xs md:text-sm  ">
         <p className="py-6 ">
           <span>MEDIA</span>
         </p>
@@ -140,7 +146,7 @@ export default function Body() {
         </div>
       </div>
 
-      <div id="contact" className="text-xs md:text-sm lg:text-base  ">
+      <div id="contact" className="text-xs md:text-sm  ">
         <p className="py-6 ">
           <span>CONTACT</span>
         </p>
@@ -155,7 +161,7 @@ export default function Body() {
         </div>
       </div>
 
-      <div className="py-6  ">
+      <div className="py-6 text-xs md:text-sm  ">
         <a href="#top" className="underline scroll-smooth ">
           Back to Top
         </a>
