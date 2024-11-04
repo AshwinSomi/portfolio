@@ -6,6 +6,8 @@ import { FaGithub } from "react-icons/fa";
 import { LiaGithubSquare } from "react-icons/lia";
 import { IoTriangleSharp } from "react-icons/io5";
 import { RxTriangleRight } from "react-icons/rx";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
 import PlayGame from "./PlayGame";
 
 export default function Body() {
@@ -13,7 +15,7 @@ export default function Body() {
   return (
     <div id="top" className="p-6 text-white ">
       <div>
-        <h2 className="text-3xl pb-10 sm:text-4xl ">Ashwin</h2>
+        <h2 className="text-2xl pb-10 sm:text-3xl ">ASHWIN</h2>
       </div>
       <div className="flex flex-wrap pt-10 pb-6 ">
         <div className="grid grid-col text-xs md:text-sm lg:text-base pb-6 ">
@@ -49,20 +51,26 @@ export default function Body() {
         <div>
           <p>
             ■{" "}
-            <a href="#projects" className="underline ">
+            <a href="#projects" className="underline scroll-smooth ">
               Projects
             </a>
           </p>
           <p>
             ■{" "}
-            <a href="#resume" className="underline ">
+            <a href="#resume" className="underline scroll-smooth ">
               Resume
             </a>
           </p>
           <p>
             ■{" "}
-            <a href="#media" className="underline ">
+            <a href="#media" className="underline scroll-smooth ">
               Media
+            </a>
+          </p>
+          <p>
+            ■{" "}
+            <a href="#contact" className="underline scroll-smooth ">
+              Contact
             </a>
           </p>
         </div>
@@ -114,7 +122,7 @@ export default function Body() {
         <p className="py-6 ">
           <span>MEDIA</span>
         </p>
-        <div>
+        <div className="flex flex-row gap-4">
           <a
             href="https://github.com/AshwinSomi"
             className="inline-block "
@@ -122,15 +130,31 @@ export default function Body() {
           >
             <FaGithub
               //   className="text-gray-400 hover:text-white opacity-75 hover:opacity-100 duration-100 hover:scale-110 active:scale-95 cursor-pointer"
-              className="text-gray-300 hover:text-white opacity-75 hover:opacity-100
+              className="text-gray-400 hover:text-white opacity-75 hover:opacity-100
                active:translate-x-0.5 active:translate-y-0.5 duration-50 cursor-pointer"
               size={30}
             />
           </a>
         </div>
       </div>
-      <div className="py-6 ">
-        <a href="#top" className="underline ">
+
+      <div id="contact" className="text-xs md:text-sm lg:text-base  ">
+        <p className="py-6 ">
+          <span>CONTACT</span>
+        </p>
+        <div>
+          <p>
+            ■{" "}
+            <a className="pr-6" href="tel:+1928-814-1768">
+              +1 928-814-1768
+            </a>{" "}
+            ■ <a href="mailto:ashwinsomi@gmail.com">ashwinsomi@gmail.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div className="py-6  ">
+        <a href="#top" className="underline scroll-smooth ">
           Back to Top
         </a>
       </div>
