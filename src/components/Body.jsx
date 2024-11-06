@@ -13,13 +13,13 @@ import PlayGame from "./PlayGame";
 export default function Body() {
   const resumeLink = "";
   return (
-    <div id="top" className="p-6 text-white ">
+    <div id="top" className="p-2 text-white ">
       <div>
-        <h2 className="text-2xl pb-10 sm:text-3xl ">ASHWIN</h2>
+        <h2 className="text-2xl pb-6 sm:text-3xl ">ASHWIN</h2>
       </div>
-      <div className="flex  justify-between align-center pt-10 pb-6 ">
+      <div className="flex  justify-between align-center pt-6 pb-3 ">
         {/* lg:text-base */}
-        <div className="grid grid-col text-xs md:text-sm  pb-6 ">
+        <div className="grid grid-col text-xs md:text-sm ">
           <p>
             I am a{/* <span className="text-transparent bg-white">web</span> */}{" "}
             <span className="text-transparent bg-white"> developer</span>
@@ -41,7 +41,7 @@ export default function Body() {
             src={pic2}
             alt="Picture"
             // h-36 md:h-44 lg:h-52;; h-auto min-h-24 max-h-48 min-w-24
-            className=" h-32 md:h-40 lg:h-48  w-auto  mx-auto px-6 
+            className=" h-40 md:h-48  w-auto  mx-auto pl-6 
             transition duration-300 ease-in-out opacity-95 hover:opacity-100 hover:scale-105 "
           ></img>
           {/* <div
