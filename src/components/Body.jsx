@@ -21,11 +21,14 @@ export default function Body() {
         {/* lg:text-base */}
         <div className="grid grid-col text-xs md:text-sm  pb-6 ">
           <p>
-            I am a <span className="text-transparent bg-white">web</span>{" "}
-            <span className="text-transparent bg-white"> developer</span>, doing
-            bit of everything.
+            I am a{/* <span className="text-transparent bg-white">web</span> */}{" "}
+            <span className="text-transparent bg-white"> developer</span>
+            {/* , doing bit of everything. */}
           </p>
-          <p>Interested in learning and developing new things.</p>
+          <p>
+            Interested in learning and developing new things across different
+            areas of technology.
+          </p>
           <p>
             You can connect me at{" "}
             <a className="underline " href="mailto:ashwinsomi@gmail.com">
@@ -33,12 +36,13 @@ export default function Body() {
             </a>
           </p>
         </div>
-        <div className="relative group ">
+        <div className="relative group flex-shrink-0 ">
           <img
             src={pic2}
             alt="Picture"
-            // h-36 md:h-44 lg:h-52
-            className=" h-auto min-h-16 max-h-48 w-auto mx-auto px-6 transition duration-300 ease-in-out opacity-95 hover:opacity-100 hover:scale-105 "
+            // h-36 md:h-44 lg:h-52;; h-auto min-h-24 max-h-48 min-w-24
+            className=" h-32 md:h-40 lg:h-48  w-auto  mx-auto px-6 
+            transition duration-300 ease-in-out opacity-95 hover:opacity-100 hover:scale-105 "
           ></img>
           {/* <div
             className="absolute picBlock bg-gray-300 
@@ -56,27 +60,55 @@ export default function Body() {
         <div>
           <p>
             ■{" "}
-            <a href="#projects" className="underline scroll-smooth ">
+            <button
+              className="underline "
+              onClick={() =>
+                document
+                  .getElementById("projects")
+                  .scrollIntoView({ behavior: "smooth" })
+              }
+            >
               Projects
-            </a>
+            </button>
           </p>
           <p>
             ■{" "}
-            <a href="#resume" className="underline scroll-smooth ">
+            <button
+              className="underline "
+              onClick={() =>
+                document
+                  .getElementById("resume")
+                  .scrollIntoView({ behavior: "smooth" })
+              }
+            >
               Resume
-            </a>
+            </button>
           </p>
           <p>
             ■{" "}
-            <a href="#media" className="underline scroll-smooth ">
+            <button
+              className="underline "
+              onClick={() =>
+                document
+                  .getElementById("media")
+                  .scrollIntoView({ behavior: "smooth" })
+              }
+            >
               Media
-            </a>
+            </button>
           </p>
           <p>
             ■{" "}
-            <a href="#contact" className="underline scroll-smooth ">
+            <button
+              className="underline "
+              onClick={() =>
+                document
+                  .getElementById("contact")
+                  .scrollIntoView({ behavior: "smooth" })
+              }
+            >
               Contact
-            </a>
+            </button>
           </p>
         </div>
       </div>
@@ -108,7 +140,7 @@ export default function Body() {
             <span>RESUME</span>
           </summary>
           {resumeLink === "" ? (
-            <p>- it seems link is not setup yet</p>
+            <p>- it seems the link is not setup yet</p>
           ) : (
             <a href={resumeLink} className="underline ">
               resume link
@@ -117,14 +149,14 @@ export default function Body() {
         </details>
       </div>
       {/* lg:text-base  */}
-      <div id="playGame" className="text-xs md:text-sm  ">
+      {/* <div id="playGame" className="text-xs md:text-sm  ">
         <details className="py-6 flex items-center cursor-pointer ">
           <summary>
             <span>PLAY A GAME</span>
           </summary>
           <PlayGame />
         </details>
-      </div>
+      </div> */}
 
       <div id="media" className="text-xs md:text-sm  ">
         <p className="py-6 ">
@@ -139,7 +171,7 @@ export default function Body() {
             <FaGithub
               //   className="text-gray-400 hover:text-white opacity-75 hover:opacity-100 duration-100 hover:scale-110 active:scale-95 cursor-pointer"
               className="text-gray-400 hover:text-white opacity-75 hover:opacity-100
-               active:translate-x-0.5 active:translate-y-0.5 duration-50 cursor-pointer"
+               active:translate-x-0.5 active:translate-y-0.5 duration-100 cursor-pointer"
               size={30}
             />
           </a>
@@ -156,15 +188,24 @@ export default function Body() {
             <a className="pr-6" href="tel:+1928-814-1768">
               +1 928-814-1768
             </a>{" "}
-            ■ <a href="mailto:ashwinsomi@gmail.com">ashwinsomi@gmail.com</a>
+            ■{" "}
+            <a href="mailto:ashwinsomi@gmail.com" className="hover:underline ">
+              ashwinsomi@gmail.com
+            </a>
           </p>
         </div>
       </div>
 
-      <div className="py-6 text-xs md:text-sm  ">
-        <a href="#top" className="underline scroll-smooth ">
+      <div className="py-10 text-xs md:text-sm  ">
+        <button
+          className="border border-2 p-4 py-2 active:translate-x-1 active:translate-y-1 duration-100 cursor-default "
+          onClick={() => {
+            const element = document.getElementById("top");
+            element.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
           Back to Top
-        </a>
+        </button>
       </div>
     </div>
   );
